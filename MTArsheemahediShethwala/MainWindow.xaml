@@ -1,0 +1,32 @@
+﻿<Window x:Class="MTArsheemahediShethwala.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTArsheemahediShethwala"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#20a82b">
+    <Grid>
+        <Menu Margin="0,0,0,363" Padding="5,10,5,10" Background="#333b34" >
+            <MenuItem Header="_File"  FontSize="20" Height="28" Width="60" Foreground="LightCoral">
+                <MenuItem Header="_New" FontSize="17"/>
+                <MenuItem Header="_Save" FontSize="17"/>
+                <MenuItem Header="_Quit" FontSize="17" Click="Sign_Out"/>
+            </MenuItem>
+
+            <MenuItem Header="_View"  FontSize="20" Height="28" Width="60" Foreground="LightCoral">
+                <MenuItem Header="_Ice Hockey Player" FontSize="17" Click="Button_Hockey"/>
+                <MenuItem Header="_Basketball Player" FontSize="17" Click="Button_Basketball"/>
+                <MenuItem Header="_Baseball Player" FontSize="17" Click="Button_Baseball"/>
+            </MenuItem>
+
+            <MenuItem Header="_Help"  FontSize="20" Height="28" Width="60" Click="Button_Help" Foreground="LightCoral">
+
+            </MenuItem>
+        </Menu>
+        <Label Name="name" FontSize="20" MaxWidth="700"  Content="Label" Height="55" Margin="27,106,110,273" Foreground="SaddleBrown" FontWeight="Bold"/>
+        <Button Content="Ice Hockey Player" HorizontalAlignment="Left" Margin="233,186,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="38" Width="309" Click="Button_Hockey" />
+        <Button Content="Basketball Player" HorizontalAlignment="Left" Margin="233,261,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="38" Width="309" Click="Button_Basketball"/>
+        <Button Content="Baseball Player" HorizontalAlignment="Left" Margin="233,339,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="38" Width="309" Click="Button_Baseball"/>
+    </Grid>
+</Window>

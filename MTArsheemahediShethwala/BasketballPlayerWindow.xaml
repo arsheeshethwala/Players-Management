@@ -1,0 +1,56 @@
+﻿<Window x:Class="MTArsheemahediShethwala.BasketballPlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTArsheemahediShethwala"
+        mc:Ignorable="d"
+        Title="BasketballPlayerWindow" Height="450" Width="800" Background="#58CA49">
+    <Grid>
+        <Menu Margin="0,0,0,363" Padding="5,10,5,10" Background="#333b34" >
+            <MenuItem Header="_File"  FontSize="20" Height="28" Width="60" Foreground="LightCoral">
+                <MenuItem Header="_New" FontSize="17"/>
+                <MenuItem Header="_Save" FontSize="17"/>
+                <MenuItem Header="_Quit" FontSize="17" Click="Sign_Out"/>
+            </MenuItem>
+
+            <MenuItem Header="_Edit"  FontSize="20" Height="28" Width="60" Foreground="LightCoral">
+                <MenuItem Header="_Insert" FontSize="17" Click="Insert_Click"/>
+                <MenuItem Header="_Update" FontSize="17" Click="Update_Click"/>
+                <MenuItem Header="_Delete" FontSize="17" Click="Delete_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="_Help"  FontSize="20" Height="28" Width="60" Click="Button_Help" Foreground="LightCoral">
+
+            </MenuItem>
+        </Menu>
+        <ListView Margin="23,105,517,21" Name="List" SelectionChanged="List_Click">
+
+        </ListView>
+
+        <Grid Margin="307,105,23,78">
+            <Label Name="PlayerIdL" Content="Player ID: " HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="PlayerIdT" HorizontalAlignment="Left" Margin="126,10,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="PlayerNameL" Content="Player Name: " HorizontalAlignment="Left" Margin="24,41,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="PlayerNameT" HorizontalAlignment="Left" Margin="126,41,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="TeamNameL" Content="Team Name: " HorizontalAlignment="Left" Margin="24,71,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="TeamNameT" HorizontalAlignment="Left" Margin="126,71,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="GamesPlayedL" Content="Games Played: " HorizontalAlignment="Left" Margin="24,102,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="GamesPlayedT" HorizontalAlignment="Left" Margin="126,102,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="d1l" Content="PlayerId" HorizontalAlignment="Left" Margin="24,134,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="d1t" HorizontalAlignment="Left" Margin="126,134,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="d2l" Content="PlayerId" HorizontalAlignment="Left" Margin="24,164,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="d2t" HorizontalAlignment="Left" Margin="126,164,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26"/>
+            <Label Name="TotalPointsL" Content="Total Points:" HorizontalAlignment="Left" Margin="24,195,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="TotalPointsT" HorizontalAlignment="Left" Margin="126,195,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Height="26" IsReadOnly ="true"/>
+            <!--<Button Name="action" Content="Button" HorizontalAlignment="Left" Margin="123,233,0,0" VerticalAlignment="Top" Height="32" Width="79" FontSize="18" Click="action_Click"/>-->
+        </Grid>
+        <Grid Margin="296,362,27,4">
+            <Button Content="Insert" HorizontalAlignment="Left" Margin="54,0,0,0" VerticalAlignment="Center" Height="34" Width="91" Click="Insert_Click"/>
+            <Button Content="Update" HorizontalAlignment="Left" VerticalAlignment="Center" Height="34" Width="91" Margin="332,0,0,0" Click="Update_Click"/>
+            <Button Content="Delete" HorizontalAlignment="Left" Margin="191,0,0,0" VerticalAlignment="Center" Height="34" Width="91" Click="Delete_Click"/>
+        </Grid>
+        
+        
+    </Grid>
+</Window>

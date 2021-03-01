@@ -1,0 +1,14 @@
+﻿<Window x:Class="MTArsheemahediShethwala.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTArsheemahediShethwala"
+        mc:Ignorable="d"
+        Title="help" Height="450" Width="800">
+    <Grid>
+        <Label Content="About Me" FontSize="34" HorizontalAlignment="Left" Margin="312,68,0,0" VerticalAlignment="Top" Height="61" Width="169"/>
+        <Label Content="Arsheemahedi Shethwala / 991590002" FontSize="24" HorizontalAlignment="Left" Margin="174,217,0,0" VerticalAlignment="Top" Height="50" Width="445"/>
+
+    </Grid>
+</Window>
